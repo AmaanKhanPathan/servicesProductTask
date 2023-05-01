@@ -1,0 +1,18 @@
+<!-- <form> -->
+    <div class="form-group">
+      <label for="pName">Product Name</label>
+      <input type="text" id="pName" #pName class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="pDetails">Product Details</label>
+      <textarea rows="4" id="pDetails" #pDetails class="form-control">
+        </textarea>
+    </div>
+    <div class="text-right">
+      <button mat-raised-button color="primary" (click)="onProductAdd(pName, pDetails)">
+        Add Product
+      </button>
+      <!-- <button class="btn btn-primary" type="button" 
+      (click)="onProductAdd(pName, pDetails)">Add Product</button> -->
+    </div>
+  <!-- </form> -->

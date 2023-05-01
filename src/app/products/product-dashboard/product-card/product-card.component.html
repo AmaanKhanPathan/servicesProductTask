@@ -1,0 +1,17 @@
+<div class="card mb-4">
+    <!-- {{prod | json}} -->
+    <div class="card-header">
+      <h2>{{prodObj.pname}}</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        You have ordered {{prodObj.pname}}
+        and its status is  {{prodObj.pstatus}}
+    </p>
+    </div>
+    <div class="card-footer">
+      <button mat-raised-button color="primary" (click)="onStatusChange( allProductStatus.Inprogress)" >In Progress</button>
+      <button class= "mx-2" mat-raised-button color="primary" (click)="onStatusChange( allProductStatus.Dispatched)">Dispatched</button>
+      <button  mat-raised-button color="primary" (click)="onStatusChange( allProductStatus.Delivered)">Delivered</button>
+    </div>
+  </div>
